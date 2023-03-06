@@ -32,15 +32,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SANDSTONE])
 #app.server.static_folder = 'static'
 server = app.server
 
-auth = dash_auth.BasicAuth(
-   app,
-   {'MONICA': 'GERENTE',
-    'LUISA': 'COMERCIAL',
-    'NELSY': 'COMERCIAL',
-    'ADRIANA': 'GERENTE',
-    'guest': 'guest1',
-    }
-)
+
 
 
 
